@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='assets/image/icon.png' rel='shortcut icon'>
+    <title>Hidup Sehat</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+<header>
+<nav>
+    <ul>
+        <li><a href="#"><image src="assets/image/HS.png" class="logo">&nbsp &nbsp &nbsp</image></a></li>
+        <li><a href="#olahraga">Olahraga</a></li>
+        <li><a href="#makan">Makan</a></li>
+        <li><a href="#istirahat">Istirahat</a></li>
+        <li><a href="#bmi" class="Btn">Kalkulator BMI</a></li>
+    </ul>
+</nav>
+
+</header>
+<div class="bg-parallax"></div>
+<div class="jumbotron">
+    <h1>Tips Hidup Sehat</h1>
+    <p>Sehat adalah pilihan, maka harus dibiasakan. Berikut tips hidup sehat agar tubuh kuat dan bugar hingga tua nanti.</p>
+</div>
+<main>
+<div id="content">
+
+    <article id="olahraga" class="card">
+        <h2 id="olahraga">Olahraga</h2>
+        <img src="assets/image/olahraga.jpg" class="featured-image" alt="olahraga">
+        <p>Olahraga bisa dilakukan di rumah. Bahkan saat baru bangun tidur atau menjelang tidur kamu bisa lakukan gerakan-gerakan seperti olahraga yang menyehatkan tubuh. Olahraga penting untuk melancarkan metabolisme tubuh, menjaga kesehatan jantung, dan meningkatkan sistem imun agar kamu nggak mudah sakit. Selain itu, latihan fisik secara rutin juga bisa membantu proses regenerasi tubuh secara maksimal.</p>
+    </article>
+
+    <article id="makan" class="card">
+        <h2 id="makan">Makan Bergizi</h2>
+        <img src="assets/image/sayurbuah.jpg" class="featured-image" alt="makanan">
+        <p>Sayur dan buah mengandung serat prebiotik, vitamin, mineral, serta berbagai antioksidan yang dibutuhkan oleh tubuh. Studi menunjukkan jika orang yang mengonsumsi lebih banyak sayur dan buah bisa hidup lebih lama, serta memiliki risiko yang lebih rendah terkena penyakit jantung, diabetes tipe-2, obesitas, dan penyakit lainnya. Para ahli pun merekomendasikan agar setengah dari isi piring kita berisikan sayur dan buah. Selain itu, pastikan juga untuk mengonsumsi nutrisi yang seimbang setiap harinya.</p> 
+        <section>
+            <h3>Minum Secukupnya</h3>
+            <img src="assets/image/minum.jpg" class="featured-image" alt="air putih">           
+            <p>Minum air putih yang cukup dapat memberi banyak manfaat, yakni meningkatkan metabolisme dan mencegah dehidrasi. Ketika mengalami dehidrasi, kita akan kehausan, lemas, sakit tenggorokan, hingga pusing. Jadi, minumlah air setidaknya 8 gelas per hari agar kebutuhan cairan tubuh terpenuhi untuk menjaga tubuh tetap sehat dan bugar.</p>
+        </section>  
+        <section>
+            <h3>Stop Merokok</h3>
+            <img src="assets/image/nosmoke.jpg" class="featured-image" alt="bosscha">
+            <p>Merokok bukan hanya merusak paru-paru, namun juga dapat merusak berbagai organ tubuh lainnya. Hal ini juga membuat kita lebih berpotensi terkena kanker, penyakit jantung, dan penyakit serius lainnya. Bahkan perokok pasif pun berisiko mengalami bahaya yang sama. Di samping itu, mengonsumsi minuman beralkohol secara berlebihan juga dapat meningkatkan risiko terkena kanker dan penyakit hati. Oleh sebab itu, akan lebih baik jika menghindari kebiasaan merokok dan minum minuman beralkohol.</p>
+        </section>
+    </article>
+
+    <article id="istirahat" class="card">
+    <h2 id="istirahat">Istirahat Teratur</h2>
+    <img src="assets/image/bobo.jpg" class="featured-image" alt="air putih">
+    <p>Begadang menjadi kebiasaan banyak orang. Alih-alih tidur, malam hari seringkali dihabiskan dengan bermain gadget atau menonton TV. Padahal kurang tidur dapat meningkatkan kemungkinan terkena penyakit jantung, diabetes, stroke, obesitas, dan masalah kesehatan lainnya. Selain itu, kurang tidur juga dapat mengganggu konsentrasi, kewaspadaan, dan kinerja. Oleh sebab itu, biasakan untuk tidur dengan cukup dan berkualitas. Tidur yang cukup dapat membantu menjaga kesehatan secara keseluruhan.</p>
+    </article>
+
+    <article id="bmi" class="card">
+      <form name="bmiForm">
+        <center>        
+        <h1>KALKULATOR BMI</h1>
+        <p>Body Mass Index (BMI) atau Indeks Massa Tubuh (IMT) adalah angka yang menentukan apakah berat badan Anda ideal, kurang, atau berlebih.</p>
+        <div  class="table-container">
+        <table style="text-align: left; background: #17d8fa;" cellspacing="6"  class="card">
+        <tr>
+          <th>Berat Badan (kg)</th><td><input type="text" name="weight" size="40"></td>
+        </tr>
+        <tr>
+          <th>Tinggi Badan (cm)</th><td><input type="text" name="height" size="40"></td>
+        </tr>
+        <tr align="center">
+          <td colspan="2"><input type="button" class="Btn" value="Hitung BMI" onClick="calculateBmi()"></td>
+        </tr>
+        <tr>
+          <td><br></td>
+        </tr>
+        <tr>
+          <th>BMI</th><td><input type="text" name="bmi" size="40"></td>
+        </tr>
+        <tr>
+          <th>Kesimpulan</th><td><input type="text" name="meaning" size="40"></td>
+        </tr>
+        <tr align="center">
+          <td colspan="2"><input type="reset" class="Btn" value="Reset"></td>
+        </tr>
+        </table>
+        </div>
+        <br>
+        <em>Berat badan Anda bisa dikatakan ideal jika angka BMI Anda berada antara angka 18,5 sampai 25.</em>
+        </center>
+      </form>
+    </article>
+
+</div>
+    <aside>
+        <article class="profile card">
+             <header>
+                 <h2>Author</h2>
+                 <p>Artikel ini dibuat oleh :</p>
+                 <center><img src="assets/image/brmd.jpg" class="profile-img"></center>
+                 
+                 <!-- <figure>
+                    <img src="assets/image/brmd.jpg" class="profile-img">
+                    <figcaption>Lambang</figcaption>
+                  </figure> -->
+             </header>
+             <section style="text-align: left;">
+                <h3>Biodata</h3>
+                <table>
+                   <tr>
+                      <th>Nama</th>
+                      <td>: Bramada Hdr</td>
+                   </tr>
+                   <tr>
+                      <th>Lahir</th>
+                      <td>: 01 Juli 19xx</td>
+                   </tr>
+                   <tr>
+                      <th>Alamat</th>
+                      <td>: Surakarta</td>
+                   </tr>
+                   <tr>
+                      <th>Email</th>
+                      <td>: brxx@gmail.com</td>
+                   </tr>
+                      <tr>
+                      <th>No. HP</th>
+                      <td>: <a href="https://api.whatsapp.com/send?phone=628812993018&text=Assalamualaikum.." target="_blank">+628812993018</a></td>
+                   </tr>
+               </table>
+             </section>
+        </article>
+    </aside>
+</main>
+<button onclick="topFunction()" id="myBtnSc" title="Go to top"><img src="assets/image/arrow-top.png" class="sc"></button>
+<script src="assets/js/javascript.js"></script>
+<footer>
+    <p style="text-align:center">Tentang Hidup Sehat &#169; 2020, Bramada</p>
+</footer>
+</body>
+</html>
